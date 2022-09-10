@@ -1,5 +1,5 @@
 import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import WebFont from "webfontloader";
 import App from "./App";
 import reportWebVitals from './reportWebVitals';
@@ -10,12 +10,12 @@ WebFont.load({
   },
 });
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
   <StrictMode>
     <App />
-  </StrictMode>,
-  rootElement
+  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
