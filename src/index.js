@@ -1,14 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import WebFont from "webfontloader";
+import App from "./App";
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+WebFont.load({
+  google: {
+    families: ["Poppins", "Poppins:700,400,600"],
+  },
+});
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>,
+  rootElement
 );
 
 // If you want to start measuring performance in your app, pass a function
