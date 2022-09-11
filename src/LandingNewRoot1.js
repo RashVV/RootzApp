@@ -250,19 +250,19 @@ export const LandingNewRoot1 = ({}) => {
 };
 
 const WhiteText1 = styled.div`
-  width: 264px;
-  height: 24px;
+  width: 19.541vw;
+  height: 1em;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   color: #807c7c;
   font-size: 14px;
   font-family: Poppins;
-  line-height: 24px;
+  line-height: 1em;
   white-space: nowrap;
   background-color: #ffffff;
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 0.5em 1em;
 `;
 const Text12 = styled.div`
   color: #1e1a20;
@@ -281,7 +281,6 @@ const ChevronRight = styled.img`
   height: 15px;
 `;
 const LandingNewRootzApp = styled.div`
-  height: 4120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,7 +318,7 @@ const Logo = styled.img`
   width: 111.16px;
   height: 37.06px;
   align-self: flex-start;
-  margin: 4.99px 252.74px 0px 0px;
+  margin: 0.25vw 16vw 0px 0px;
 `;
 const MenuItems = styled.div`
   width: 548px;
@@ -327,7 +326,12 @@ const MenuItems = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0px 223px 0px 0px;
+  margin: 0px 12vw 0px 0px;
+   @media screen and (max-width: 850px){
+    div {
+      display:none !important;
+    }
+  }
 `;
 const Text1 = styled.div`
   font-size: 16px;
@@ -336,7 +340,7 @@ const Text1 = styled.div`
   line-height: 32px;
   text-align: center;
   white-space: nowrap;
-  margin: 0px 102px 0px 0px;
+  margin: 0px 12vw 0px 0px;
 `;
 const Text2 = styled.div`
   font-size: 16px;
@@ -344,7 +348,7 @@ const Text2 = styled.div`
   line-height: 32px;
   text-align: center;
   white-space: nowrap;
-  margin: 0px 101px 0px 0px;
+  margin: 0 12vw 0 0;
 `;
 const Text3 = styled.div`
   font-size: 16px;
@@ -352,7 +356,7 @@ const Text3 = styled.div`
   line-height: 32px;
   text-align: center;
   white-space: nowrap;
-  margin: 0px 102px 0px 0px;
+  margin: 0 12vw 0 0;
 `;
 const Text4 = styled.div`
   font-size: 16px;
@@ -376,16 +380,13 @@ const WhiteText = styled.button`
   background-color: #ffffff;
   box-shadow: 0px 30px 40px 0px rgba(240, 101, 126, 0.05);
   border-radius: 40px;
-  padding: 13px 0px;
+  margin: 0px 0.75vw 0px 0px;
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-  }
 `;
 const Line = styled.img`
-  width: 1280px;
+  width: 97.134vw;
   height: 4px;
 `;
 const FlexRow1 = styled.div`
