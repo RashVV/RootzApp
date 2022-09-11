@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const LandingNewRoot1 = ({}) => {
   const WhiteTextFunction = (e, name) => {
+    console.log('ButtonValue', e)
     alert(`${name} was clicked`);
   };
   const BittersweetTextFunction = (e, name) => {
@@ -310,9 +311,14 @@ const Header = styled.div`
 const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-self: stretch;
   align-items: center;
+  @media screen and (max-width: 850px){
+    div {
+      display:none !important;
+    }
+  }
 `;
 const Logo = styled.img`
   width: 111.16px;
@@ -384,6 +390,11 @@ const WhiteText = styled.button`
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
+  @media screen and (max-width: 850px){
+    button {
+      display:none;
+    }
+  }
 `;
 const Line = styled.img`
   width: 97.134vw;
@@ -396,6 +407,14 @@ const FlexRow1 = styled.div`
   justify-content: flex-end;
   align-self: stretch;
   padding: 0px 32.56px;
+  @media screen and (max-width: 850px){
+    div {
+      flex-direction: column;
+      gap: 0px;
+      padding: 0px 0px;
+
+    }
+  }
 `;
 const FlexColumn = styled.div`
   height: 555px;
@@ -404,12 +423,29 @@ const FlexColumn = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
   padding: 32px 0px;
+  @media screen and (max-width: 850px){
+    div {
+      flex-direction: column;
+      gap: 0px;
+      padding: 0px;
+    }
+  }
+
 `;
 const Headline = styled.img`
   width: 542.72px;
   height: 292.74px;
   align-self: center;
   margin: 0px 0px 59.26px 0px;
+  @media screen and (max-width: 850px){
+    width: 104vw;
+    height: 54vw;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 0 0 75vw 0px;
+    padding-bottom: 89px;
+  }
 `;
 const Paragraph = styled.div`
   width: 448px;
@@ -417,6 +453,16 @@ const Paragraph = styled.div`
   font-family: Poppins;
   line-height: 32px;
   margin: 0px 0px 48px 0px;
+  @media screen and (max-width: 850px) {
+    width: 325px;
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 32px;
+    margin: 21px 0px 5px 0px;
+    position: absolute;
+    top: 335px;
+    left: 15px;
+  }
 `;
 const WhiteFlexRow = styled.div`
   width: 432px;
@@ -436,10 +482,20 @@ const FlexRow2 = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* @media screen and (max-width: 850px){
+    position: absolute;
+    top: 345px;
+    left: 15px;
+  } */
 `;
 const Image1 = styled.img`
   width: 14px;
   height: 20px;
+  @media screen and (max-width: 850px){
+    position: absolute;
+    top: 509px;
+    left: 35px;
+  }
 `;
 const Text5 = styled.div`
   color: #807c7c;
@@ -447,6 +503,11 @@ const Text5 = styled.div`
   font-family: Poppins;
   line-height: 24px;
   white-space: nowrap;
+  @media screen and (max-width: 850px){
+    position: absolute;
+    top: 509px;
+    left: 65px;
+  }
 `;
 const BittersweetText = styled.button`
   width: 122px;
@@ -469,7 +530,15 @@ const BittersweetText = styled.button`
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
+  @media screen and (max-width: 850px){
+    position: absolute;
+    top: 496px;
+    left: 229px;
+    width: 105px;
+    font-size: 12px;
+    height: 16px;
+  }
+  :hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   }
 `;
@@ -477,12 +546,27 @@ const Element8 = styled.div`
   width: 511.44px;
   height: 619px;
   position: relative;
+  @media screen and (max-width: 850px){
+    width: 279px;
+    height: 565px;
+    position: absolute;
+    top: 509px;
+    left: 65px;
+  }
 `;
 const Parrot = styled.img`
   width: 458.44px;
   height: 565px;
   left: 53px;
   position: absolute;
+  @media screen and (max-width: 850px){
+    width: 87%;
+    height: 100%;
+    position: relative;
+    top: -82px;
+    left: 66px;
+    /* z-index: 1; */
+  }
 `;
 const FlexColumn1 = styled.div`
   height: 320px;
@@ -495,11 +579,23 @@ const FlexColumn1 = styled.div`
   background-size: cover;
   background-image: url("https://file.rendit.io/n/EfQJbicfBqd5CrmPYExl.svg");
   padding: 0px 72px 0px 32px;
+  @media screen and (max-width: 850px){
+    width: 59vw;
+    height: 70vw;
+    position: absolute;
+    top: 161px;
+    left: -57px;
+  }
 `;
 const Icon = styled.img`
   width: 48px;
   height: 56px;
   margin: 0px 0px 92px 0px;
+  @media screen and (max-width: 850px){
+    width: 35px;
+    height: 29px;
+    margin: 30px 0px 30px 25px;
+  }
 `;
 const Text6 = styled.div`
   color: #ffffff;
@@ -509,6 +605,12 @@ const Text6 = styled.div`
   line-height: 28px;
   white-space: nowrap;
   text-transform: capitalize;
+  @media screen and (max-width: 850px){
+    font-size: 15px;
+    line-height: 21px;
+    margin-left: 20px;
+    margin-top: 35px;
+  }
 `;
 const Text7 = styled.div`
   align-self: center;
@@ -518,6 +620,11 @@ const Text7 = styled.div`
   font-family: Poppins;
   line-height: 80px;
   white-space: nowrap;
+  @media screen and (max-width: 850px){
+    font-size: 40px;
+    margin-top: -18px;
+    margin-left: -56px;
+  }
 `;
 const Team1 = styled.div`
   width: 1120px;
