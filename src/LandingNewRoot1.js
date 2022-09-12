@@ -66,7 +66,7 @@ export const LandingNewRoot1 = ({}) => {
             </WhiteFlexRow>
           </FlexColumn>
           <Element8>
-            <Parrot src={`https://file.rendit.io/n/oHZTkpkEBgyXvjbUQTvq.svg`} />
+            <Parrot src={`https://file.rendit.io/n/oHZTkpkEBgyXvjbUQTvq.svg#svgView(viewBox(0,0,62,0))`} />
             <FlexColumn1>
               <Icon src={`https://file.rendit.io/n/fXNoxHicoFXFgdNAZcOw.svg`} />
               <Text6>Members</Text6>
@@ -264,6 +264,11 @@ const WhiteText1 = styled.div`
   background-color: #ffffff;
   border-radius: 40px;
   padding: 0.5em 1em;
+  @media screen and (max-width: 850px) {
+    width: 291px;
+    height: 40px;
+    line-height: 24px;
+  }
 `;
 const Text12 = styled.div`
   color: #1e1a20;
@@ -391,9 +396,8 @@ const WhiteText = styled.button`
   box-sizing: content-box;
   cursor: pointer;
   @media screen and (max-width: 850px){
-    button {
-      display:none;
-    }
+      display: none;
+      opacity: 1;
   }
 `;
 const Line = styled.img`
@@ -482,11 +486,6 @@ const FlexRow2 = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* @media screen and (max-width: 850px){
-    position: absolute;
-    top: 345px;
-    left: 15px;
-  } */
 `;
 const Image1 = styled.img`
   width: 14px;
@@ -563,7 +562,7 @@ const Parrot = styled.img`
     width: 87%;
     height: 100%;
     position: relative;
-    top: -82px;
+    top: -11px;
     left: 66px;
     /* z-index: 1; */
   }
@@ -580,7 +579,7 @@ const FlexColumn1 = styled.div`
   background-image: url("https://file.rendit.io/n/EfQJbicfBqd5CrmPYExl.svg");
   padding: 0px 72px 0px 32px;
   @media screen and (max-width: 850px){
-    width: 59vw;
+    width: 60vw;
     height: 70vw;
     position: absolute;
     top: 161px;
@@ -666,6 +665,19 @@ const Element9 = styled.div`
   height: 367px;
   position: relative;
   align-self: stretch;
+  @media screen and (max-width: 850px){
+      display: flex;
+	    width: 100%;
+	    height: 950px;
+	    position: relative;
+	    -webkit-align-self: stretch;
+	    -ms-flex-item-align: stretch;
+	    align-self: stretch;
+	    flex-wrap: wrap;
+	    flex-direction: column-reverse;
+	    align-content: center;
+	    align-items: center;
+  }
 `;
 const Image2 = styled.img`
   width: 393.04px;
@@ -673,6 +685,13 @@ const Image2 = styled.img`
   left: 163.8px;
   top: 25.34px;
   position: absolute;
+  @media screen and (max-width: 850px){
+      width: 393.04px;
+      left: 315.8px;
+    	top: 566.34px;
+    	transform: rotate(69deg);
+    	position: absolute;
+  }
 `;
 const Image3 = styled.img`
   width: 393.04px;
@@ -680,11 +699,26 @@ const Image3 = styled.img`
   left: 620.8px;
   top: 135.83px;
   position: absolute;
+  @media screen and (max-width: 850px) {
+      width: 393.04px;
+	    height: 178.83px;
+	    left: 380.8px;
+	    top: 135.83px;
+	    transform: rotate(-74deg);
+	    position: absolute;
+  }
 `;
 const Img = styled.img`
   width: 323px;
   height: 274px;
   position: absolute;
+  @media screen and (max-width: 850px){
+    width: 239px;
+    height: 226px;
+    position: absolute;
+    top: 14px;
+    left: 375px;
+  }
 `;
 const Img1 = styled.img`
   width: 334px;
@@ -692,15 +726,29 @@ const Img1 = styled.img`
   left: 392px;
   top: 104px;
   position: absolute;
+  @media screen and (max-width: 850px){
+    width: 241px;
+    height: 207px;
+    left: 503px;
+    top: 383px;
+    position: absolute;
+  }
 `;
 const Img2 = styled.img`
   width: 276px;
   height: 312px;
   left: 844px;
   position: absolute;
+  @media screen and (max-width: 850px){
+    width: 216px;
+    height: 240px;
+    top: 820px;
+    left: 379px;
+    position: absolute;
+  }
 `;
 const Bg = styled.div`
-  width: 960px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -709,6 +757,13 @@ const Bg = styled.div`
   border-radius: 20px;
   padding: 79.59px 80px 104px 80px;
   margin: 0px 0px 192px 0px;
+  @media screen and (max-width: 850px){
+      width: 374px;
+	    flex-direction: column;
+	    border-radius: 13px;
+      padding: 70px 0px;
+      margin: 0px 0px;
+  }
 `;
 const Txt = styled.div`
   gap: 40px;
@@ -718,6 +773,11 @@ const Txt = styled.div`
   align-self: flex-end;
   align-items: center;
   margin: 0px 0px 64px 0px;
+  @media screen and (max-width: 850px){
+    justify-content: center;
+    align-self: stretch;
+    margin: 55px 0px 65px 0px;
+  }
 `;
 const Text9 = styled.div`
   width: 389px;
@@ -727,6 +787,13 @@ const Text9 = styled.div`
   font-family: Poppins;
   line-height: 56px;
   text-transform: capitalize;
+  @media screen and (max-width: 850px){
+    width: 100%;
+		font-size: 27px;
+		line-height: 42px;
+    justify-content: center;
+    display: flex;
+	}
 `;
 const Paragraph2 = styled.div`
   width: 384px;
@@ -735,11 +802,22 @@ const Paragraph2 = styled.div`
   font-family: Poppins;
   line-height: 32px;
   white-space: pre-wrap;
+  @media screen and (max-width: 850px){
+    width: 335px;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+  	line-height: 26.25px;
+  }
 `;
 const ContactForm = styled.div`
   width: 450.89px;
   height: 376.41px;
   position: relative;
+  @media screen and (max-width: 850px){
+    width: 339px;
+    height: 327px;
+  }
 `;
 const Bgform = styled.div`
   height: 352px;
@@ -752,6 +830,13 @@ const Bgform = styled.div`
   background-color: #f7f3f4;
   border-radius: 16px;
   padding: 0px 55px;
+  @media screen and (max-width: 850px){
+    width: 339px;
+    height: 327px;
+    top: 0px;
+    position: relative;
+    padding: 0;
+  }
 `;
 const Text10 = styled.div`
   color: #222433;
@@ -762,6 +847,11 @@ const Text10 = styled.div`
   white-space: nowrap;
   text-transform: capitalize;
   margin: 0px 0px 24px 0px;
+  @media screen and (max-width: 850px) {
+    width: 71px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 `;
 const Inputname = styled.div`
   display: flex;
@@ -810,6 +900,12 @@ const Image4 = styled.img`
   left: 398.55px;
   top: 78.12px;
   position: absolute;
+   @media screen and (max-width: 850px){
+    width: 39.1px;
+    height: 35.49px;
+    left: 307.55px;
+    top: 22.12px;
+  }
 `;
 const Image5 = styled.img`
   width: 60.03px;
@@ -817,6 +913,13 @@ const Image5 = styled.img`
   left: 379.68px;
   top: 4.28px;
   position: absolute;
+  @media screen and (max-width: 850px){
+    width: 53.03px;
+    height: 69.75px;
+    left: 287.68px;
+    top: -29.72px;
+    position: absolute;
+  }
 `;
 const FAQs = styled.div`
   gap: 104px;
