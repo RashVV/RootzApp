@@ -3,25 +3,39 @@ import styled from "styled-components";
 
 export const LandingNewRoot1 = ({}) => {
   const WhiteTextFunction = (e, name) => {
-    alert(`${name} was clicked`);
+   let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const BittersweetTextFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const BittersweetText1Function = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const BittersweetText2Function = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const BtncloseFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const BtnopenFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const Btnopen1Function = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   return (
     <LandingNewRootzApp>
