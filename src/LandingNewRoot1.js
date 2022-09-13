@@ -167,7 +167,7 @@ export const LandingNewRoot1 = ({}) => {
           </Question2>
         </QA>
       </FAQs>
-      <Bg1>
+      <Slider>
         <Img3>
           <Text15>Avoid plastic</Text15>
         </Img3>
@@ -176,7 +176,7 @@ export const LandingNewRoot1 = ({}) => {
           <Cardmain>
             <FlexColumn4>
               <Txt3>
-                <Text12>Save watter</Text12>
+                <CallToAction1>Save watter</CallToAction1>
                 <Paragraph5>
                   Taking on the issue of ensuring access to safe water requires
                   worldwide effort.
@@ -203,17 +203,15 @@ export const LandingNewRoot1 = ({}) => {
         <Img6>
           <Text19>Save energy</Text19>
         </Img6>
-      </Bg1>
-      <Background>
+      </Slider>
+      <Footer>
         <Element4>
           <Text20>Contacts</Text20>
           <Paragraph6>
-            2019 Rootz Foundation.
-            <br />
-            All rights reserved
+            2019 Rootz Foundation. All rights reserved
           </Paragraph6>
         </Element4>
-        <FlexRow5>
+        <ContactInformation>
           <Element3>
             <Text21>Headquarters</Text21>
             <Paragraph7>
@@ -244,8 +242,8 @@ export const LandingNewRoot1 = ({}) => {
               </Base1>
             </FlexRow6>
           </Element2>
-        </FlexRow5>
-      </Background>
+        </ContactInformation>
+      </Footer>
     </LandingNewRootzApp>
   );
 };
@@ -270,7 +268,7 @@ const WhiteText1 = styled.div`
     line-height: 24px;
   }
 `;
-const Text12 = styled.div`
+const CallToAction1 = styled.div`
   color: #1e1a20;
   font-size: 24px;
   font-weight: 600;
@@ -278,9 +276,33 @@ const Text12 = styled.div`
   line-height: 34px;
   white-space: nowrap;
 `;
+const Text12 = styled.div`
+  color: #1e1a20;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Poppins;
+  line-height: 34px;
+  white-space: nowrap;
+  @media screen and (max-width: 850px){
+    width: 332px;
+    font-size: 18px;
+    line-height: 28px;
+    height: 110px;
+    white-space: unset;
+    padding-top: 64px;
+    margin-top: 11px;
+  }
+`;
 const Divider = styled.img`
   width: 536px;
   height: 1px;
+  @media screen {
+    width: 375px;
+    height: 2px;
+    position: absolute;
+    top: 3865px;
+    left: 0px;
+  }
 `;
 const ChevronRight = styled.img`
   width: 8px;
@@ -564,7 +586,6 @@ const Parrot = styled.img`
     position: relative;
     top: -11px;
     left: 66px;
-    /* z-index: 1; */
   }
 `;
 const FlexColumn1 = styled.div`
@@ -890,7 +911,7 @@ const BittersweetText1 = styled.button`
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
+  &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   }
 `;
@@ -928,6 +949,11 @@ const FAQs = styled.div`
   justify-content: flex-start;
   align-items: flex-end;
   margin: 0px 0px 192px 0px;
+  @media screen and (max-width: 850px){
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+  }
 `;
 const FlexColumn2 = styled.div`
   height: 389px;
@@ -937,6 +963,10 @@ const FlexColumn2 = styled.div`
   justify-content: flex-start;
   align-self: stretch;
   align-items: center;
+  @media screen {
+    width: 400px;
+    justify-content: center;
+  }
 `;
 const Txt1 = styled.div`
   gap: 40px;
@@ -944,15 +974,31 @@ const Txt1 = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @media screen and (max-width: 850px){
+    width: 303px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 36px;
+    margin-left: 18px;
+    margin-right: 36px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const Text11 = styled.div`
-  width: 480px;
+  width: 83%;
   color: #222433;
   font-size: 40px;
   font-weight: 700;
   font-family: Poppins;
   line-height: 56px;
   text-transform: capitalize;
+  @media screen and (max-width: 850px){
+    width: 109%;
+    font-size: 28px;
+    line-height: 42px;
+  }
 `;
 const Paragraph3 = styled.div`
   width: 423px;
@@ -960,6 +1006,11 @@ const Paragraph3 = styled.div`
   font-size: 18px;
   font-family: Poppins;
   line-height: 32px;
+  @media screen and (max-width: 850px){
+    width: 312px;
+    font-size: 15px;
+    line-height: 26.25px;
+  }
 `;
 const BittersweetText2 = styled.button`
   width: 166px;
@@ -983,16 +1034,21 @@ const BittersweetText2 = styled.button`
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  @media screen and (max-width: 850px){
+    margin-left: 30px;
   }
-`;
+ `;
 const QA = styled.div`
   height: 389px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @media screen and (max-width: 850px){
+    width: 339px;
+    height: 404px;
+    justify-content: center;
+  }
 `;
 const Question = styled.div`
   height: 181px;
@@ -1002,6 +1058,10 @@ const Question = styled.div`
   align-self: center;
   align-items: center;
   margin: 0px 0px 32px 0px;
+  @media screen and (max-width: 850px) {
+    width: 339px;
+    justify-content: center;
+  }
 `;
 const FlexRow3 = styled.div`
   gap: 60px;
@@ -1011,6 +1071,10 @@ const FlexRow3 = styled.div`
   align-self: stretch;
   align-items: center;
   margin: 0px 0px 13px 0px;
+  @media screen and (max-width: 850px){
+    width: 310px;
+    margin: 0px;
+  }
 `;
 const Btnclose = styled.button`
   width: 40px;
@@ -1022,7 +1086,12 @@ const Btnclose = styled.button`
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
+  @media screen and (max-width: 850px){
+    width: 67px;
+    height: 42px;
+    margin-top: 9px;
+  }
+  &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   }
   background-color: transparent;
@@ -1035,12 +1104,21 @@ const Paragraph4 = styled.div`
   font-family: Poppins;
   line-height: 24px;
   margin: 0px 0px 31px 0px;
+  @media screen and (max-width: 850px) {
+    width: 332px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.5px;
+  }
 `;
 const Question1 = styled.div`
   width: 536px;
   height: 72px;
   position: relative;
   margin: 0px 0px 32px 0px;
+  @media screen and (max-width: 850px) {
+    width: 339px;
+  }
 `;
 const Text13 = styled.div`
   top: 3px;
@@ -1051,6 +1129,12 @@ const Text13 = styled.div`
   font-family: Poppins;
   line-height: 34px;
   white-space: nowrap;
+  @media screen and (max-width: 850px){
+    top: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    white-space: unset;
+  }
 `;
 const Btnopen = styled.button`
   width: 40px;
@@ -1064,7 +1148,11 @@ const Btnopen = styled.button`
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
+  @media screen and (max-width: 850px){
+    left: 282px;
+    top: 31px;
+  }
+  &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   }
   background-color: transparent;
@@ -1074,6 +1162,10 @@ const Divider1 = styled.img`
   height: 1px;
   top: 71px;
   position: absolute;
+  @media screen and (max-width: 850px){
+    top: 81px;
+    left: -50px;
+  }
 `;
 const Question2 = styled.div`
   gap: 31px;
@@ -1088,23 +1180,31 @@ const FlexRow4 = styled.div`
   justify-content: space-between;
   align-self: stretch;
   align-items: center;
+  @media screen and (max-width: 850px){
+    width: 332px;
+  }
 `;
 const Btnopen1 = styled.button`
   width: 40px;
   height: 40px;
   background-size: cover;
   background-position: center;
+  position: absolute;
+  left: 1155px;
   background-image: url("https://file.rendit.io/n/gSHgUBRKXIzpRpUHlYaQ.svg");
   padding: 0px;
   border-width: 0px;
   box-sizing: content-box;
   cursor: pointer;
-  &: hover {
+  @media screen and (max-width: 850px){
+    left: 320px;
+  }
+  &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   }
   background-color: transparent;
 `;
-const Bg1 = styled.div`
+const Slider = styled.div`
   width: 1440px;
   display: flex;
   flex-direction: row;
@@ -1112,6 +1212,9 @@ const Bg1 = styled.div`
   align-items: flex-start;
   background-color: #ffbd9e;
   padding: 104px 0px;
+  @media screen and (max-width: 850px){
+    width: 100%;
+  }
 `;
 const Img3 = styled.div`
   height: 208px;
@@ -1256,7 +1359,7 @@ const Text19 = styled.div`
   line-height: 34px;
   white-space: nowrap;
 `;
-const Background = styled.div`
+const Footer = styled.div`
   width: 1097px;
   height: 152px;
   display: flex;
@@ -1265,6 +1368,15 @@ const Background = styled.div`
   align-items: flex-start;
   background-color: #f7f3f4;
   padding: 96px 183px 88px 160px;
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: max-content;
+    padding-top: 20px;
+
+  }
 `;
 const Element4 = styled.div`
   gap: 32px;
@@ -1272,6 +1384,11 @@ const Element4 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 850px) {
+    gap: 0px;
+    justify-content: start;
+    align-items: flex-start;
+  }
 `;
 const Text20 = styled.div`
   color: #333333;
@@ -1281,6 +1398,9 @@ const Text20 = styled.div`
   line-height: 48px;
   white-space: nowrap;
   text-transform: uppercase;
+  @media screen and (max-width: 850px){
+    font-size: 28px;
+  }
 `;
 const Paragraph6 = styled.div`
   align-self: flex-start;
@@ -1290,14 +1410,22 @@ const Paragraph6 = styled.div`
   line-height: 24px;
   white-space: nowrap;
   letter-spacing: 0.3px;
+  @media scteen and (max-width: 850px) {
+    font-size: 12px;
+  }
 `;
-const FlexRow5 = styled.div`
+const ContactInformation = styled.div`
   width: 617px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-self: flex-end;
   align-items: center;
+  @media screen and (max-width: 850px){
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 15px;
+  }
 `;
 const Element3 = styled.div`
   gap: 37px;
@@ -1305,6 +1433,9 @@ const Element3 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 850px) {
+    gap: 10px;
+  }
 `;
 const Text21 = styled.div`
   width: 221px;
@@ -1314,6 +1445,10 @@ const Text21 = styled.div`
   font-family: Poppins;
   line-height: 32px;
   letter-spacing: 0.3px;
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    font-size: 18px;
+  }
 `;
 const Paragraph7 = styled.div`
   width: 221px;
@@ -1322,6 +1457,10 @@ const Paragraph7 = styled.div`
   font-family: Poppins;
   line-height: 24px;
   letter-spacing: 0.3px;
+  @media screen and (max-width: 850px){
+    width: 100%;
+    font-size: 12px;
+  }
 `;
 const Element2 = styled.div`
   gap: 37px;
@@ -1330,6 +1469,11 @@ const Element2 = styled.div`
   justify-content: center;
   align-self: flex-start;
   align-items: center;
+  @media screen and (max-width: 850px) {
+    gap: 10px;
+    align-self: flex-start;
+    align-items: flex-end;
+  }
 `;
 const Text22 = styled.div`
   color: #333333;
