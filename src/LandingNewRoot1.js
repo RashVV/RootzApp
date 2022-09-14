@@ -2,27 +2,40 @@ import React from "react";
 import styled from "styled-components";
 
 export const LandingNewRoot1 = ({}) => {
-  const WhiteTextFunction = (e, name) => {
-    console.log('ButtonValue', e)
-    alert(`${name} was clicked`);
+  const ApplyButtonFunction = (e, name) => {
+   let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   const BittersweetTextFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
-  const BittersweetText1Function = (e, name) => {
-    alert(`${name} was clicked`);
+  const BookADemoBtnFunction = (e, name) => {
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
-  const BittersweetText2Function = (e, name) => {
-    alert(`${name} was clicked`);
+  const FAQsButtonContactFunction = (e, name) => {
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
-  const BtncloseFunction = (e, name) => {
-    alert(`${name} was clicked`);
+  const ButtonCloseFunction = (e, name) => {
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
-  const BtnopenFunction = (e, name) => {
-    alert(`${name} was clicked`);
+  const ButtonOpenFunction = (e, name) => {
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
-  const Btnopen1Function = (e, name) => {
-    alert(`${name} was clicked`);
+  const BtnOpen1Function = (e, name) => {
+    let contactForm = prompt('RootzApp is in the development stage, please leave your e-mail and our team will contact you ASAP. Thank you for your visit. You can call +380969634403 for details.', )
+      alert(contactForm, 'was saved');
+      console.info('Client input was', contactForm);
   };
   return (
     <LandingNewRootzApp>
@@ -36,9 +49,9 @@ export const LandingNewRoot1 = ({}) => {
               <Text3>Places</Text3>
               <Text4>Team</Text4>
             </MenuItems>
-            <WhiteText onClick={(e) => WhiteTextFunction(e, "WhiteText")}>
+            <ApplyButton onClick={(e) => ApplyButtonFunction(e, "ApplyButton")}>
               Apply
-            </WhiteText>
+            </ApplyButton>
           </FlexRow>
           <Line src={`https://file.rendit.io/n/DRjMaGl8KXZQvkU3OK1r.svg`} />
         </Header>
@@ -75,13 +88,13 @@ export const LandingNewRoot1 = ({}) => {
           </Element8>
         </FlexRow1>
       </Hero>
-      <Team1>
-        <Txt2>
-          <Text8>Our top team</Text8>
-          <Paragraph1>
+      <OurTeam>
+        <OurTeamHeader>
+          <OurTeamTitle>Our top team</OurTeamTitle>
+          <OurTeamDescription>
             Learn more about how you can save our planet's nature.{" "}
-          </Paragraph1>
-        </Txt2>
+          </OurTeamDescription>
+        </OurTeamHeader>
         <Element9>
           <Image2 src={`https://file.rendit.io/n/bsFca1s9IypZS2Pr8FTB.svg`} />
           <Image3 src={`https://file.rendit.io/n/k3DCj5vjg3kF6HKmKrky.svg`} />
@@ -89,8 +102,8 @@ export const LandingNewRoot1 = ({}) => {
           <Img1 src={`https://file.rendit.io/n/MvmsOzy9hV558t634qbe.png`} />
           <Img2 src={`https://file.rendit.io/n/q9XRFTy27G5fuW4bKxOr.png`} />
         </Element9>
-      </Team1>
-      <Bg>
+      </OurTeam>
+      <GetStarted>
         <Txt>
           <Text9>Get started today!</Text9>
           <Paragraph2>
@@ -100,155 +113,154 @@ export const LandingNewRoot1 = ({}) => {
           </Paragraph2>
         </Txt>
         <ContactForm>
-          <Bgform>
-            <Text10>Log in</Text10>
-            <Inputname>
-              <WhiteText1>Name</WhiteText1>
-            </Inputname>
-            <Inputmail>
-              <WhiteText1>Email</WhiteText1>
-            </Inputmail>
-            <BittersweetText1
-              onClick={(e) => BittersweetText1Function(e, "BittersweetText1")}
+          <LogFormWrapper>
+            <LogInTitle>Log in</LogInTitle>
+            <InputName>
+              <InputPlaceholder>Name</InputPlaceholder>
+            </InputName>
+            <InputEmail>
+              <InputPlaceholder>Email</InputPlaceholder>
+            </InputEmail>
+            <BookADemoBtn
+              onClick={(e) => BookADemoBtnFunction(e, "BookADemoBtn")}
             >
               Book a demo
-            </BittersweetText1>
-          </Bgform>
+            </BookADemoBtn>
+          </LogFormWrapper>
           <Image4 src={`https://file.rendit.io/n/GkRkQIRHD6LV9kxsnWpJ.svg`} />
           <Image5 src={`https://file.rendit.io/n/YgB4lOjqG4EMMd7FIWG4.svg`} />
         </ContactForm>
-      </Bg>
+      </GetStarted>
       <FAQs>
-        <FlexColumn2>
-          <Txt1>
-            <Text11>Ready to Get started?</Text11>
-            <Paragraph3>
-              When pattern is mentioned in interior design, it is easy to asso-
-              ciate it with a geometric patterned wallpaper or colourful prints
+        <FAQsWrapper>
+          <FAQsAbout>
+            <FAQsTitle>Ready to Get started?</FAQsTitle>
+            <FAQsDescription>
+              When pattern is mentioned in interior design, it is easy to associate it with a geometric patterned wallpaper or colorful prints
               on interior fabrics.
-            </Paragraph3>
-          </Txt1>
-          <BittersweetText2
-            onClick={(e) => BittersweetText2Function(e, "BittersweetText2")}
+            </FAQsDescription>
+          </FAQsAbout>
+          <FAQsButtonContact
+            onClick={(e) => FAQsButtonContactFunction(e, "FAQsButtonContact")}
           >
             Contact us
-          </BittersweetText2>
-        </FlexColumn2>
-        <QA>
+          </FAQsButtonContact>
+        </FAQsWrapper>
+        <QuestionWrapper>
           <Question>
-            <FlexRow3>
-              <Text12>What can I do to protect our planet?</Text12>
-              <Btnclose onClick={(e) => BtncloseFunction(e, "Btnclose")} />
-            </FlexRow3>
-            <Paragraph4>
+            <QuestionTitleWrapper>
+              <QuestionTitle>What can I do to protect our planet?</QuestionTitle>
+              <ButtonClose onClick={(e) => ButtonCloseFunction(e, "ButtonClose")} />
+            </QuestionTitleWrapper>
+            <QuestionAnswer>
               Not to make an open fire in nature and to clean up litter; not to
               pollute open water bodies; to switch to alternative energy
               sources; to reduce the use of non-renewable resources
-            </Paragraph4>
+            </QuestionAnswer>
             <Divider
               src={`https://file.rendit.io/n/YtjuBNNP9FrnuxVKhDeK.svg`}
             />
           </Question>
           <Question1>
-            <Text13>How to save nature ecology?</Text13>
-            <Btnopen onClick={(e) => BtnopenFunction(e, "Btnopen")} />
+            <QuestionTitle1>How to save nature ecology?</QuestionTitle1>
+            <ButtonOpen onClick={(e) => ButtonOpenFunction(e, "ButtonOpen")} />
             <Divider1
               src={`https://file.rendit.io/n/YtjuBNNP9FrnuxVKhDeK.svg`}
             />
           </Question1>
           <Question2>
-            <FlexRow4>
-              <Text12>What is nature conservation?</Text12>
-              <Btnopen1 onClick={(e) => Btnopen1Function(e, "Btnopen1")} />
-            </FlexRow4>
+            <QuestionTitleWrapper1>
+              <QuestionTitle>What is nature conservation?</QuestionTitle>
+              <BtnOpen1 onClick={(e) => BtnOpen1Function(e, "BtnOpen1")} />
+            </QuestionTitleWrapper1>
             <Divider
               src={`https://file.rendit.io/n/YtjuBNNP9FrnuxVKhDeK.svg`}
             />
           </Question2>
-        </QA>
+        </QuestionWrapper>
       </FAQs>
       <Slider>
         <Img3>
-          <Text15>Avoid plastic</Text15>
+          <SliderCallToAct2>Avoid plastic</SliderCallToAct2>
         </Img3>
-        <Text16>Choose organic</Text16>
+        <SliderCallToAct3>Choose organic</SliderCallToAct3>
         <FlexColumn3>
-          <Cardmain>
+          <CardMain>
             <FlexColumn4>
               <Txt3>
-                <CallToAction1>Save watter</CallToAction1>
+                <CallToAction1>Save water</CallToAction1>
                 <Paragraph5>
                   Taking on the issue of ensuring access to safe water requires
                   worldwide effort.
                 </Paragraph5>
               </Txt3>
             </FlexColumn4>
-            <Imgmain
+            <ImgMain
               src={`https://file.rendit.io/n/4GgQ27z3jbz8VWHouy6H.png`}
             />
-          </Cardmain>
+          </CardMain>
           <Indicator>
             <ChevronRight
               src={`https://file.rendit.io/n/hwG7G8NTRanI45zfJe4D.svg`}
             />
-            <Element7>
-              1 <Element6>/ 6</Element6>
-            </Element7>
+            <Counter>
+              1 <CounterNA>/ 6</CounterNA>
+            </Counter>
             <ChevronRight
               src={`https://file.rendit.io/n/xOoSPVcZxfCrxRAOiZqw.svg`}
             />
           </Indicator>
         </FlexColumn3>
-        <Text18>Plant trees</Text18>
+        <SliderCallToAct1>Plant trees</SliderCallToAct1>
         <Img6>
-          <Text19>Save energy</Text19>
+          <SliderCallToAct>Save energy</SliderCallToAct>
         </Img6>
       </Slider>
       <Footer>
-        <Element4>
-          <Text20>Contacts</Text20>
-          <Paragraph6>
+        <FooterTitle>
+          <FooterTitle1>Contacts</FooterTitle1>
+          <FooterTitleDescription>
             2019 Rootz Foundation. All rights reserved
-          </Paragraph6>
-        </Element4>
+          </FooterTitleDescription>
+        </FooterTitle>
         <ContactInformation>
-          <Element3>
-            <Text21>Headquarters</Text21>
-            <Paragraph7>
+          <Address>
+            <AddressTitle>Headquarters</AddressTitle>
+            <AddressDescription>
               1234 Taliban
               <br />
               Los Angeles, La 1234567
               <br />
               (123) 456-7890
-            </Paragraph7>
-          </Element3>
-          <Element2>
-            <Text22>Social media</Text22>
-            <FlexRow6>
-              <Base2>
-                <Image6
+            </AddressDescription>
+          </Address>
+          <ContactSocialMedia>
+            <ContactSocialMediaTitle>Social media</ContactSocialMediaTitle>
+            <ContactSocialMediaDescription>
+              <Tweeter>
+                <TweeterImg
                   src={`https://file.rendit.io/n/GUhi3AADgIHH0InSZxIZ.svg`}
                 />
-              </Base2>
-              <Base>
-                <Element1
+              </Tweeter>
+              <FaceBook>
+                <FaceBookImg
                   src={`https://file.rendit.io/n/yZkB4tuUZ4zGnsw6Fa4c.svg`}
                 />
-              </Base>
-              <Base1>
-                <In1
+              </FaceBook>
+              <LinkedIn>
+                <LinkedInImg
                   src={`https://file.rendit.io/n/ZDoLaq44E2cZYFklklNK.svg`}
                 />
-              </Base1>
-            </FlexRow6>
-          </Element2>
+              </LinkedIn>
+            </ContactSocialMediaDescription>
+          </ContactSocialMedia>
         </ContactInformation>
       </Footer>
     </LandingNewRootzApp>
   );
 };
 
-const WhiteText1 = styled.div`
+const InputPlaceholder = styled.div`
   width: 19.541vw;
   height: 1em;
   display: flex;
@@ -276,7 +288,7 @@ const CallToAction1 = styled.div`
   line-height: 34px;
   white-space: nowrap;
 `;
-const Text12 = styled.div`
+const QuestionTitle = styled.div`
   color: #1e1a20;
   font-size: 24px;
   font-weight: 600;
@@ -297,7 +309,7 @@ const Divider = styled.img`
   width: 536px;
   height: 1px;
   @media screen {
-    width: 375px;
+    width: 100%;
     height: 2px;
     position: absolute;
     top: 3865px;
@@ -352,6 +364,9 @@ const Logo = styled.img`
   height: 37.06px;
   align-self: flex-start;
   margin: 0.25vw 16vw 0px 0px;
+  @media screen {
+    z-index: 325;
+  }
 `;
 const MenuItems = styled.div`
   width: 548px;
@@ -398,7 +413,7 @@ const Text4 = styled.div`
   text-align: center;
   white-space: nowrap;
 `;
-const WhiteText = styled.button`
+const ApplyButton = styled.button`
   width: 145px;
   height: 22px;
   display: flex;
@@ -646,7 +661,7 @@ const Text7 = styled.div`
     margin-left: -56px;
   }
 `;
-const Team1 = styled.div`
+const OurTeam = styled.div`
   width: 1120px;
   gap: 13px;
   display: flex;
@@ -655,14 +670,14 @@ const Team1 = styled.div`
   align-items: center;
   margin: 0px 0px 192px 0px;
 `;
-const Txt2 = styled.div`
+const OurTeamHeader = styled.div`
   gap: 16px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 `;
-const Text8 = styled.div`
+const OurTeamTitle = styled.div`
   color: #222433;
   font-size: 40px;
   font-weight: 700;
@@ -672,7 +687,7 @@ const Text8 = styled.div`
   white-space: nowrap;
   text-transform: capitalize;
 `;
-const Paragraph1 = styled.div`
+const OurTeamDescription = styled.div`
   width: 352px;
   color: #1e1a20;
   font-size: 18px;
@@ -768,8 +783,8 @@ const Img2 = styled.img`
     position: absolute;
   }
 `;
-const Bg = styled.div`
-  width: 100%;
+const GetStarted = styled.div`
+  width: 960px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -840,7 +855,7 @@ const ContactForm = styled.div`
     height: 327px;
   }
 `;
-const Bgform = styled.div`
+const LogFormWrapper = styled.div`
   height: 352px;
   top: 24.41px;
   position: absolute;
@@ -859,7 +874,7 @@ const Bgform = styled.div`
     padding: 0;
   }
 `;
-const Text10 = styled.div`
+const LogInTitle = styled.div`
   color: #222433;
   font-size: 32px;
   font-weight: 600;
@@ -874,7 +889,7 @@ const Text10 = styled.div`
     line-height: 32px;
   }
 `;
-const Inputname = styled.div`
+const InputName = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -882,7 +897,7 @@ const Inputname = styled.div`
   box-shadow: 0px 30px 40px 0px rgba(240, 101, 126, 0.05);
   margin: 0px 0px 16px 0px;
 `;
-const Inputmail = styled.div`
+const InputEmail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -890,7 +905,7 @@ const Inputmail = styled.div`
   box-shadow: 0px 30px 40px 0px rgba(240, 101, 126, 0.05);
   margin: 0px 0px 32px 0px;
 `;
-const BittersweetText1 = styled.button`
+const BookADemoBtn = styled.button`
   width: 312px;
   height: 18px;
   display: flex;
@@ -955,7 +970,7 @@ const FAQs = styled.div`
     margin: 0px;
   }
 `;
-const FlexColumn2 = styled.div`
+const FAQsWrapper = styled.div`
   height: 389px;
   gap: 56px;
   display: flex;
@@ -968,7 +983,7 @@ const FlexColumn2 = styled.div`
     justify-content: center;
   }
 `;
-const Txt1 = styled.div`
+const FAQsAbout = styled.div`
   gap: 40px;
   display: flex;
   flex-direction: column;
@@ -986,7 +1001,7 @@ const Txt1 = styled.div`
     align-items: center;
   }
 `;
-const Text11 = styled.div`
+const FAQsTitle = styled.div`
   width: 83%;
   color: #222433;
   font-size: 40px;
@@ -1000,7 +1015,7 @@ const Text11 = styled.div`
     line-height: 42px;
   }
 `;
-const Paragraph3 = styled.div`
+const FAQsDescription = styled.div`
   width: 423px;
   color: #1e1a20;
   font-size: 18px;
@@ -1012,7 +1027,7 @@ const Paragraph3 = styled.div`
     line-height: 26.25px;
   }
 `;
-const BittersweetText2 = styled.button`
+const FAQsButtonContact = styled.button`
   width: 166px;
   height: 18px;
   display: flex;
@@ -1038,7 +1053,7 @@ const BittersweetText2 = styled.button`
     margin-left: 30px;
   }
  `;
-const QA = styled.div`
+const QuestionWrapper = styled.div`
   height: 389px;
   display: flex;
   flex-direction: column;
@@ -1063,7 +1078,7 @@ const Question = styled.div`
     justify-content: center;
   }
 `;
-const FlexRow3 = styled.div`
+const QuestionTitleWrapper = styled.div`
   gap: 60px;
   display: flex;
   flex-direction: row;
@@ -1076,7 +1091,7 @@ const FlexRow3 = styled.div`
     margin: 0px;
   }
 `;
-const Btnclose = styled.button`
+const ButtonClose = styled.button`
   width: 40px;
   height: 40px;
   background-size: cover;
@@ -1096,7 +1111,7 @@ const Btnclose = styled.button`
   }
   background-color: transparent;
 `;
-const Paragraph4 = styled.div`
+const QuestionAnswer = styled.div`
   width: 459px;
   align-self: flex-start;
   color: #1e1a20;
@@ -1120,7 +1135,7 @@ const Question1 = styled.div`
     width: 339px;
   }
 `;
-const Text13 = styled.div`
+const QuestionTitle1 = styled.div`
   top: 3px;
   position: absolute;
   color: #1e1a20;
@@ -1136,7 +1151,7 @@ const Text13 = styled.div`
     white-space: unset;
   }
 `;
-const Btnopen = styled.button`
+const ButtonOpen = styled.button`
   width: 40px;
   height: 40px;
   left: 496px;
@@ -1174,7 +1189,7 @@ const Question2 = styled.div`
   justify-content: flex-start;
   align-items: center;
 `;
-const FlexRow4 = styled.div`
+const QuestionTitleWrapper1 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1184,7 +1199,7 @@ const FlexRow4 = styled.div`
     width: 332px;
   }
 `;
-const Btnopen1 = styled.button`
+const BtnOpen1 = styled.button`
   width: 40px;
   height: 40px;
   background-size: cover;
@@ -1227,7 +1242,7 @@ const Img3 = styled.div`
   padding: 0px 24px 0px 0px;
   margin: 98px 72px 0px 0px;
 `;
-const Text15 = styled.div`
+const SliderCallToAct2 = styled.div`
   width: 77px;
   height: 34px;
   color: #ffffff;
@@ -1237,7 +1252,7 @@ const Text15 = styled.div`
   line-height: 34px;
   white-space: nowrap;
 `;
-const Text16 = styled.div`
+const SliderCallToAct3 = styled.div`
   width: 193px;
   height: 281px;
   display: flex;
@@ -1263,10 +1278,13 @@ const FlexColumn3 = styled.div`
   align-items: center;
   margin: 0px 52px 0px 0px;
 `;
-const Cardmain = styled.div`
+const CardMain = styled.div`
   width: 438px;
   height: 383px;
   position: relative;
+  @media screen and (max-width: 850px){
+    width: 375px;
+  }
 `;
 const FlexColumn4 = styled.div`
   height: 196px;
@@ -1295,7 +1313,7 @@ const Paragraph5 = styled.div`
   line-height: 24px;
   text-align: center;
 `;
-const Imgmain = styled.img`
+const ImgMain = styled.img`
   width: 186px;
   height: 163px;
   left: 45px;
@@ -1308,20 +1326,20 @@ const Indicator = styled.div`
   justify-content: flex-start;
   align-items: center;
 `;
-const Element7 = styled.div`
+const Counter = styled.div`
   font-size: 24px;
   font-family: Poppins;
   line-height: 32px;
   white-space: pre-wrap;
 `;
-const Element6 = styled.div`
+const CounterNA = styled.div`
   display: contents;
   color: rgba(0, 0, 0, 0.2);
   font-size: 24px;
   font-family: Poppins;
   line-height: 32px;
 `;
-const Text18 = styled.div`
+const SliderCallToAct1 = styled.div`
   width: 131px;
   height: 243px;
   display: flex;
@@ -1349,7 +1367,7 @@ const Img6 = styled.div`
   padding: 0px 0px 0px 47.93px;
   margin: 104px 0px 0px 0px;
 `;
-const Text19 = styled.div`
+const SliderCallToAct = styled.div`
   width: 51.07px;
   height: 34px;
   color: #ffffff;
@@ -1375,10 +1393,9 @@ const Footer = styled.div`
     align-items: center;
     height: max-content;
     padding-top: 20px;
-
   }
 `;
-const Element4 = styled.div`
+const FooterTitle = styled.div`
   gap: 32px;
   display: flex;
   flex-direction: column;
@@ -1390,7 +1407,7 @@ const Element4 = styled.div`
     align-items: flex-start;
   }
 `;
-const Text20 = styled.div`
+const FooterTitle1 = styled.div`
   color: #333333;
   font-size: 34px;
   font-weight: 700;
@@ -1402,7 +1419,8 @@ const Text20 = styled.div`
     font-size: 28px;
   }
 `;
-const Paragraph6 = styled.div`
+const FooterTitleDescription = styled.div`
+  width: 150px;
   align-self: flex-start;
   color: #333333;
   font-size: 13px;
@@ -1410,8 +1428,9 @@ const Paragraph6 = styled.div`
   line-height: 24px;
   white-space: nowrap;
   letter-spacing: 0.3px;
-  @media scteen and (max-width: 850px) {
+  @media screen and (max-width: 850px) {
     font-size: 12px;
+    width: 100%;
   }
 `;
 const ContactInformation = styled.div`
@@ -1427,7 +1446,7 @@ const ContactInformation = styled.div`
     padding-top: 15px;
   }
 `;
-const Element3 = styled.div`
+const Address = styled.div`
   gap: 37px;
   display: flex;
   flex-direction: column;
@@ -1437,7 +1456,7 @@ const Element3 = styled.div`
     gap: 10px;
   }
 `;
-const Text21 = styled.div`
+const AddressTitle = styled.div`
   width: 221px;
   color: #333333;
   font-size: 20px;
@@ -1450,7 +1469,7 @@ const Text21 = styled.div`
     font-size: 18px;
   }
 `;
-const Paragraph7 = styled.div`
+const AddressDescription = styled.div`
   width: 221px;
   color: #333333;
   font-size: 13px;
@@ -1462,7 +1481,7 @@ const Paragraph7 = styled.div`
     font-size: 12px;
   }
 `;
-const Element2 = styled.div`
+const ContactSocialMedia = styled.div`
   gap: 37px;
   display: flex;
   flex-direction: column;
@@ -1475,7 +1494,7 @@ const Element2 = styled.div`
     align-items: flex-end;
   }
 `;
-const Text22 = styled.div`
+const ContactSocialMediaTitle = styled.div`
   color: #333333;
   font-size: 20px;
   font-weight: 700;
@@ -1484,7 +1503,7 @@ const Text22 = styled.div`
   white-space: nowrap;
   letter-spacing: 0.3px;
 `;
-const FlexRow6 = styled.div`
+const ContactSocialMediaDescription = styled.div`
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -1492,7 +1511,7 @@ const FlexRow6 = styled.div`
   align-self: stretch;
   align-items: center;
 `;
-const Base2 = styled.div`
+const Tweeter = styled.div`
   height: 32px;
   display: flex;
   flex-direction: column;
@@ -1502,11 +1521,11 @@ const Base2 = styled.div`
   border-radius: 16.01px;
   padding: 0px 7px 0px 8px;
 `;
-const Image6 = styled.img`
+const TweeterImg = styled.img`
   width: 17px;
   height: 13.32px;
 `;
-const Base = styled.div`
+const FaceBook = styled.div`
   width: 32px;
   display: flex;
   flex-direction: row;
@@ -1516,11 +1535,11 @@ const Base = styled.div`
   border-radius: 16.01px;
   padding: 9.25px 0px 9.31px 0px;
 `;
-const Element1 = styled.img`
+const FaceBookImg = styled.img`
   width: 7.11px;
   height: 13.44px;
 `;
-const Base1 = styled.div`
+const LinkedIn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1529,7 +1548,7 @@ const Base1 = styled.div`
   border-radius: 16.01px;
   padding: 8.54px 8.6px 10.65px 9.94px;
 `;
-const In1 = styled.img`
+const LinkedInImg = styled.img`
   width: 13.46px;
   height: 12.81px;
 `;

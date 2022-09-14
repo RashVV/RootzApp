@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { LandingNewRoot1 } from "./LandingNewRoot1";
 import { ThemeProvider } from 'styled-components';
-//import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
@@ -23,7 +22,6 @@ export default function App() {
           </FocusLock>
           </div>
         <LandingNewRoot1 />
-        {/* <GlobalStyles /> */}
         </>
     </ThemeProvider>
 
